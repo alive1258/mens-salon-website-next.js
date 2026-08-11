@@ -3,7 +3,7 @@ import PageHero from "@/src/components/ui/PageHero";
 import Section from "@/src/components/ui/Section";
 import SectionHeading from "@/src/components/ui/SectionHeading";
 import FaqAccordion from "@/src/components/ui/FaqAccordion";
-import PriceListTable from "@/src/components/sections/pricing/PriceListTable";
+import PriceList from "@/src/components/sections/pricing/PriceList";
 import CtaBanner from "@/src/components/sections/CtaBanner";
 import { pricingFaqs } from "@/src/data/pricing";
 
@@ -22,7 +22,7 @@ export default function PricingPage() {
         title="Transparent pricing, every service."
         description="Search or filter by category to find exact pricing for anything we offer — no surprises at the counter."
       />
-      <PriceListTable />
+      <PriceList />
       <Section tone="raised">
         <SectionHeading
           eyebrow="Questions"

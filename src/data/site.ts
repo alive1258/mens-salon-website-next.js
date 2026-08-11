@@ -1,3 +1,27 @@
+export interface SalonLocation {
+  id: string;
+  name: string;
+  address: string;
+  hours: string;
+}
+
+export const locations: SalonLocation[] = [
+  {
+    id: "gulshan",
+    name: "Gulshan Premium Lounge",
+    address:
+      "Rupayan Golden Age (2nd Floor), Plot 99, Road 37, Block CWN (C), Gulshan Avenue, Dhaka 1212",
+    hours: "10:00 AM – 10:00 PM",
+  },
+  {
+    id: "bashundhara",
+    name: "Bashundhara Premium Lounge",
+    address:
+      "Rahman Tower (Lift-4), Ka-1/B, Jagannathpur, Beside Hardco International School, Bashundhara, Dhaka",
+    hours: "10:00 AM – 10:00 PM",
+  },
+];
+
 export const siteConfig = {
   name: "ScissorHand",
   tagline: "Premium Grooming for the Modern Man",
@@ -5,11 +29,8 @@ export const siteConfig = {
     "A premium men's grooming lounge offering expert haircuts, shaves, hair treatments, facials, Hydra facials, massage, and waxing — real skill, real products, real results.",
   phone: "+880 1700-000000",
   email: "hello@scissorhand.salon",
-  address: "House 12, Road 5, Gulshan-2, Dhaka 1212, Bangladesh",
-  hours: [
-    { days: "Sat – Thu", time: "10:00 AM – 9:00 PM" },
-    { days: "Friday", time: "3:00 PM – 9:00 PM" },
-  ],
+  address: locations[0].address,
+  hours: [{ days: "Every day", time: "10:00 AM – 10:00 PM" }],
   social: {
     instagram: "https://instagram.com",
     facebook: "https://facebook.com",
